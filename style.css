@@ -1,0 +1,398 @@
+/*inisialisasi warna
+	#ff4e56 = merah button 
+	#f1f1f1 = background field
+	#71b0f8 = biru link
+	#3e95c7 = biru
+*/
+
+/* Inisialisasi Font */
+@font-face {
+	font-family: Product-Sans-Bold;
+	src: url(font/Product-Sans-Bold.otf);
+}
+
+
+@font-face {
+	font-family: Product-Sans-Regular;
+	src: url(font/Product-Sans-Regular.otf);
+}
+
+@font-face {
+	font-family: Product-Sans-Italic;
+	src: url(font/Product-Sans-Italic.otf);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #f7f7f7;
+}
+
+.container-logreg{
+	display: grid;
+ 	grid-template-columns: 30% 70%;
+}
+
+.login_background{
+	background: url(asset/undraw1.png);
+	background-size: cover;
+	height: 100%;
+}
+
+.field_input{
+	background:white;
+	padding: 8px;
+	font-size: 12px;
+	font-weight: lighter;
+	margin-bottom: 10px;
+	box-shadow: 1px 1px 5px 5px #f1f1f1;
+}
+
+.field_login{
+	background-color: #f7f7f7;
+	overflow: hidden;
+	padding: 40px;
+	height: 618px;
+}
+
+.field_login h1 {
+	font-family: Product-Sans-Bold;
+	font-size: 18px;
+	font-weight: lighter;
+	color: #3e95c7;
+	margin-top: 40px;
+	text-align: left;
+}
+
+.field_login img {
+	width: 150px;
+	margin: auto;
+	margin-top: -20px;
+}
+
+.field_login p {
+	font-family: Product-Sans-Regular;
+	font-size: 14px;
+	margin-top: 12px;
+	color: #3e95c7;
+}
+
+.field_login h2 {
+	font-family: Product-Sans-Bold;
+	font-size: 14px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	font-weight: bold;
+	color: #3e95c7;
+}
+
+.field_login form {
+	text-align: left;
+	font-family: Product-Sans-Regular;
+	color: grey;
+}
+
+.field_login input[type=text], .field_login input[type=password]{
+	width: 100%;
+	border: none;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.field_login input[type=submit]{
+	padding: 12px 28px;
+	background-color: #3e95c7;
+	border: none;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 12px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: Product-Sans-Regular;
+}
+
+.field_login input[type=submit]:hover{
+	background-color: #5bb1e3;
+	transition: 0.3s;
+}
+
+.field_login a{
+	color: #3e95c7;
+	background: white;
+	font-family: Product-Sans-Regular;
+	margin-left: 12px;
+	padding: 10px 28px;
+	border-radius: 4px;
+	font-size: 14px;
+	border: 1px solid #3e95c7;
+	text-decoration: none;
+}
+.field_login a:hover{
+	background-color: #5bb1e3;
+	transition: 0.3s;
+	color: white;
+	border: 1px solid #5bb1e3;
+}
+
+.header {
+	width: 90%;
+	margin:auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.header h3 {
+	font-size: 30px;
+	float: left;
+	font-family: Product-Sans-Regular;
+	color: #3e95c7;
+	padding: 10px 16px;
+}
+
+.header a {
+	float: right;
+	font-family: Product-Sans-Regular;
+	color: #3e95c7;
+	padding: 10px 16px;
+	border-radius: 4px;
+	border: 1px solid #3e95c7;
+	background: white;
+	margin: 12px;
+	text-decoration: none;
+}
+
+.header a:hover {
+	color: white;
+	border: 1px solid #3e95c7;
+	background: #3e95c7;
+	transition: 0.3s;
+}
+
+.container-exam {
+	width: 90%;
+	margin:auto;
+	display: grid;
+	padding-top: 80px;
+ 	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.exam {
+	cursor: pointer;
+	margin: 5%;
+	padding: 5%;
+	border-radius: 8px;
+	background: white;
+	box-shadow: 1px 1px 5px 1px cyan;
+	font-family: Product-Sans-Regular;
+	text-align: center;
+}
+
+.container-exam a {
+	text-decoration: none;
+}
+
+.exam:hover {
+	background: #f1f1f1;
+	transition: 0.5s;
+	color: white;
+}
+
+.exam h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #3e95c7;
+	margin-bottom: 20px;
+	height: 40px;
+}
+
+.exam h2 {
+	font-size: 13px;
+	font-weight: lighter;
+	color: #3e95c7;
+	margin-top: 20px;
+}
+
+.exam p {
+	font-size: 13px;
+	font-weight: lighter;
+	color: #3e95c7;
+}
+
+.container-soal {
+	margin:auto;
+	display: grid;
+ 	grid-template-columns: 80% 20%;
+ 	font-family: Product-Sans-Regular;
+}
+
+.soal-scroll {
+	margin-bottom: 10px;
+	height: 650px;
+	overflow-y: scroll;
+}
+
+.soal {
+	margin: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 5px 1px cyan;
+	background: white;
+}
+
+.soal img {
+	width: 100%;
+}
+
+.soal p {
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.soal input[type=radio] {
+	margin-bottom: 10px;
+}
+
+.navigation-soal {
+	padding: 16px;
+	border-radius: 8px;
+	background: white;
+}
+
+.navigation-soal h1 {
+	font-size: 16px;
+	font-weight: lighter;
+	margin-bottom: 20px;
+	text-align: left;
+	margin-top: 12px;
+}
+
+.navigation-soal h4 {
+	font-size: 12px;
+	font-weight: lighter;
+	text-decoration: none;
+	padding: 10px 12px;
+	background: white;
+	border: 1px solid #3e95c7;
+	margin: 3px;
+	border-radius: 8px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.navigation-soal h4:hover {
+	background-color: #3e95c7;
+	color: white;
+	transition: 0.3s;
+}
+
+.navigation-number {
+	width: 90%;
+	display: grid;
+ 	grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.soal-scroll input[type=button]{
+	margin-left: 40px;
+	padding: 20px 16px;
+	background:#3e95c7;
+	border-radius: 8px;
+	color: white;
+	cursor: pointer;
+	border: 0px;
+}
+
+h1{
+	text-align: center;
+	margin-top: 30px;
+	font-family: Product-Sans-Regular;
+}
+.tabel {
+	width: 95%;
+	margin: auto;
+	padding-top: 10%;
+}
+
+.tabel table {
+	width: 91%;
+	margin: auto;
+ 	border-collapse: collapse;
+	border-radius: 5px;
+	font-family: Product-Sans-Regular;
+}
+
+.tabel th {
+	background-color: #3e95c7;
+	font-weight: bold;
+}
+
+.tabel th {
+	background-color: #3e95c7;
+	color: #ffffff;
+	text-decoration: bold;
+}
+
+.tabel tr:nth-child(even) {background-color: #f2f2f2;}
+
+.tabel tr {background-color: #fff;}
+
+.tabel th, td {
+	padding: 10px;
+}
+
+.tabel td {
+	padding: 10px;
+	text-align: center;
+}
+
+.td-left{
+	text-align: left;
+}
+
+.navigasi-admin {
+	background: white;
+	height: 610px;
+	padding: 20px;
+}
+
+.navigasi-admin h1 {
+	color: #3e95c7;
+	font-family: Product-Sans-Regular;
+	font-size: 26px;
+	margin-bottom: 20px;
+	margin-top: 60px;
+}
+
+.navigasi-admin a {
+	color: #3e95c7;
+	font-family: Product-Sans-Regular;
+	text-decoration: none;
+	padding: 10px 20px;
+	height: 100px
+}
+.navigasi-admin a:hover {
+	font-size: 20px;
+	transition: 0.5s;	
+}
+
+.navigasi-admin ul {
+	padding-top: 20px;
+}
+
+.navigasi-admin li {
+	color: #3e95c7;
+	font-family: Product-Sans-Regular;
+	text-decoration: none;
+	padding: 8px 8px;
+	list-style: none;
+}
+
+
+.container-admin{
+	display: grid;
+ 	grid-template-columns: 25% 75%;
+}
